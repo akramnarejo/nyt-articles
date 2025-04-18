@@ -1,12 +1,56 @@
-# React + Vite
+# NYT Most Popular Articles App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite application that displays the most popular articles from the New York Times using their public API.
 
-Currently, two official plugins are available:
+## 📦 Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+## 🚀 Run the App
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🧪 Run Cypress UI Tests
+
+1. Start the Vite dev server:
+
+```bash
+npm run dev
+```
+
+2. Open Cypress in interactive mode:
+
+```bash
+npx cypress open
+```
+
+3. Or run Cypress headlessly:
+
+```bash
+npx cypress run
+```
+
+Make sure your test files are located in `cypress/e2e/`.
+
+## 🧰 Scripts
+
+```json
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "cypress": "cypress open",
+  "cypress:run": "cypress run"
+}
+```
+
+## 🗝️ Notes
+- Add your API key in `src/api/nyt.ts`
+- Uses Tailwind CSS for styling
+- Routing handled by `react-router-dom`
+- Cypress used for E2E testing
