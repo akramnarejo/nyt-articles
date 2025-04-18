@@ -51,6 +51,5 @@ Make sure your test files are located in `cypress/e2e/`.
 
 ## 🗝️ Notes
 - Add your API key in `src/api/nyt.ts`
-- Uses Tailwind CSS for styling
 - Routing handled by `react-router-dom`
 - Cypress used for E2E testing
